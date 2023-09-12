@@ -12,7 +12,7 @@ phases:
   build:
     commands:
       - terraform init
-      - terraform plan --out=plan.out
+      - terraform plan -out=plan.out
       - terraform apply plan.out --auto-approve
 
 
